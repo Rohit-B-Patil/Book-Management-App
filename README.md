@@ -1,46 +1,44 @@
 # 📘 Book Management App
 
-A React + Vite based Book Management Application styled with **Bulma CSS**.  
-This app allows users to manage a list of books with basic operations:
+A fully functional Book Management App built with **React + Vite**, styled using **Bulma CSS**, and powered by **JSON Server** for API-based data persistence.
 
-- 📚 Add new books
-- ✏️ Edit existing books
+Users can:
+
+- ✍️ Add new books
+- 🛠️ Edit existing books
 - ❌ Delete books
-- 📋 View the complete book list
-- 🖼️ Each book has a random image fetched from [Lorem Picsum](https://picsum.photos)
-
-> ✅ Currently completed: **Phase 1 (Local State Management)**
+- 📋 View a list of books
+- 🖼️ Each book features a random image via [Lorem Picsum](https://picsum.photos)
 
 ---
 
-## 🚀 Project Phases
+## 🔄 Project Phases
 
-### ✅ Phase 1: Local State (Completed)
+### ✅ Phase 1: Local State Management
 
-- Book data managed using React's local state (`useState`)
-- No backend or data persistence — refresh clears the list
-- Basic CRUD functionality implemented
-- Random images from Lorem Picsum
-- UI styled using Bulma CSS
+- Basic CRUD functionality using React local state (`useState`)
+- Books stored temporarily in memory
+- No data persistence across refreshes
 
-### ⏳ Phase 2: API Integration (Upcoming)
+### ✅ Phase 2: API Integration with JSON Server
 
-- Add external API for persistent storage (CRUD with backend)
+- Book data stored and fetched using **JSON Server**
+- API requests handled using **Axios**
+- All operations (Create, Read, Update, Delete) interact with `http://localhost:3001/books`
+- Used **REST Client extension** in VS Code for API testing
+- Added additional `useEffect` for syncing and updating local state with server data
 
-### 🔜 Phase 3: Centralized State (Upcoming)
+### 🔜 Phase 3: Centralized State (Coming Soon)
 
-- Introduce state management using Redux or React Context
-- Centralized handling of API responses and UI updates
+- Planned implementation with Redux or React Context API
 
 ---
 
 ## 🛠️ Tech Stack
 
 - ⚛️ React + Vite
-- 🎨 [Bulma CSS](https://bulma.io/)
-- 🖼️ [Lorem Picsum](https://picsum.photos)
-- 🧠 React Hooks (`useState`, `useEffect`)
-
----
-
-## 📁 Folder Structure
+- 🎨 Bulma CSS
+- 🧾 Axios for API requests
+- 💾 JSON Server (mock backend)
+- 🧪 REST Client (for testing API endpoints)
+- 🎯 React Hooks: `useState`, `useEffect`
