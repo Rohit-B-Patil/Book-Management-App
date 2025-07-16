@@ -28,9 +28,15 @@ Users can:
 - Used **REST Client extension** in VS Code for API testing
 - Added additional `useEffect` for syncing and updating local state with server data
 
-### 🔜 Phase 3: Centralized State (Coming Soon)
+### ✅ Phase 3: Centralized State with Context API
 
-- Planned implementation with Redux or React Context API
+- Replaced prop drilling by implementing **React Context API**
+- Created centralized `BooksContext` to manage global state and actions
+- All components consume book state and actions via `useContext`
+- Cleaner component structure and easier state sharing
+- Used **`useCallback`** inside context provider to:
+  - Avoid stale function references in `useEffect`
+  - Optimize functions passed to child components
 
 ---
 
@@ -41,4 +47,4 @@ Users can:
 - 🧾 Axios for API requests
 - 💾 JSON Server (mock backend)
 - 🧪 REST Client (for testing API endpoints)
-- 🎯 React Hooks: `useState`, `useEffect`
+- 🎯 React Hooks: `useState`, `useEffect`, `useContext`, `useCallback`
